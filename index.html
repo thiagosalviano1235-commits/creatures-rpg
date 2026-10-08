@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Terra de Aster</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div class="brand">
+          <span class="brand-mark">✦</span>
+          <div>
+            <h1>Terra de Aster</h1>
+            <p>RPG de criaturas original</p>
+          </div>
+        </div>
+      </header>
+
+      <main class="game-stage">
+        <canvas id="gameCanvas" width="960" height="540"></canvas>
+
+        <div id="titleScreen" class="overlay visible">
+          <div class="panel">
+            <span class="eyebrow">Nova aventura</span>
+            <h2>Terra de Aster</h2>
+            <p>
+              Explore uma cidade acolhedora, atravesse rotas selvagens e descubra
+              criaturas raras em um mundo original.
+            </p>
+
+            <div class="menu-buttons">
+              <button id="newGameBtn" class="primary">Novo jogo</button>
+              <button id="continueBtn">Continuar</button>
+              <button id="settingsBtn">Configurações</button>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
